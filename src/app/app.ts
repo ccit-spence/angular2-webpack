@@ -10,7 +10,8 @@ import {ApplicationHeader} from './components/application-header/application-hea
     template: '<application-header></application-header><h1 class="my-app">My First Angular 2 App</h1>',
     styles: [`
     .my-app {
-      font-family: Arial, Helvetica, sans-serif;
+        margin: 10px;
+        font-family: Arial, Helvetica, sans-serif;
     }
   `]
 })

@@ -11,12 +11,19 @@ module.exports = {
     ],
 
     context: __dirname + '/src/app',
-    entry: './app.ts',
+    entry: {
+        app: './app.ts',
+        vendor: ['zone.js', 'reflect-metadata', 'angular2/angular2']
+    },
     output: {
         path: __dirname + "/dist",
         publicPath: 'dist/',
         filename: "bundle.js"
     },
+
+    plugins: [
+        new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"vendor.bundle.js")
+    ],
 
     devtool: 'source-map',
 
@@ -33,4 +40,5 @@ module.exports = {
         historyApiFallback: true,
         hot: false
     }
+
 };
