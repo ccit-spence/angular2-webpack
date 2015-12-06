@@ -10,9 +10,10 @@ module.exports = {
         new LiveReloadPlugin()
     ],
 
-    entry: './src/app/app.ts',
+    context: __dirname + '/src/app',
+    entry: './app.ts',
     output: {
-        path: "./dist",
+        path: __dirname + "/dist",
         publicPath: 'dist/',
         filename: "bundle.js"
     },
@@ -21,18 +22,10 @@ module.exports = {
 
     module: {
         loaders: [
-            {
-                test: /\.ts$/,
-                loader: 'ts-loader'
-            },
-            {
-                test: /\.css$/,
-                loader: 'style-loader'
-            },
-            {
-                test: /\.scss$/,
-                loaders: ["style", "css", "sass"]
-            }
+            {test: /\.ts$/, loader: 'ts'},
+            {test: /\.html$/, loader: 'html'},
+            {test: /\.css$/, loader: 'raw'},
+            {test: /\.scss$/, loader: 'raw!sass'}
         ]
     },
 
