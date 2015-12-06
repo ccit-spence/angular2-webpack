@@ -1,0 +1,38 @@
+{
+  "name": "angular2-manual-webpack",
+  "version": "1.0.0",
+  "description": "test for webpack and Angular2",
+  "main": "src/app/app.js",
+  "scripts": {
+    "start": "webpack-dev-server --inline --colors --display-error-details --display-cached --port 8080"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.23.0",
+    "es6-shim": "^0.33.13",
+    "jasmine": "^2.4.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.15",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.6",
+    "karma-webpack": "^1.7.0",
+    "node-sass": "^3.4.2",
+    "reflect-metadata": "^0.1.2",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "ts-loader": "^0.7.2",
+    "tsd": "^0.6.5",
+    "typescript": "^1.7.3",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0",
+    "webpack-livereload-plugin": "^0.4.0"
+  },
+  "private": true,
+  "dependencies": {
+    "@reactivex/rxjs": "^5.0.0-alpha.10",
+    "angular2": "^2.0.0-alpha.47",
+    "reflect-metadata": "^0.1.2",
+    "zone.js": "^0.5.8"
+  }
+}
