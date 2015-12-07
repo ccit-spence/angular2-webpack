@@ -1,0 +1,32 @@
+.application-header-dropdown {
+    float: left;
+    margin: 2px 0px 0px 0px;
+    padding: 7px 5px 5px 5px;
+    .application-header-dropdown__title {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        color: #a7cadc;
+        &:hover {
+            cursor: hand;
+        }
+    }
+    .application-header-dropdown__content {
+        position: absolute;
+        z-index: 1000;
+        margin: 11px 0px 0px 0px;
+        background-color: #efefef;
+        border: 1px solid #cccccc;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        -webkit-border-bottom-right-radius: 5px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        color: #333333;
+        ul {
+            list-style: none;
+        }
+    }
+}

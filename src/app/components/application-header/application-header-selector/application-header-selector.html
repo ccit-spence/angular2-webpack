@@ -1,0 +1,13 @@
+<div class="application-header-selector">
+    <div class="application-header-selector__icon" (click)="toggle()">
+        <i class="fa fa-2x fa-bars"></i>
+    </div>
+    <div class="application-header-selector__content" [hidden]="!visible">
+        <ul>
+            <li><i class="fa fa-fw fa-bank"></i><a href="#"> Finance</a></li>
+            <li><i class="fa fa-fw fa-area-chart"></i><a href="#"> Sales</a></li>
+            <li><i class="fa fa-fw fa-bullseye"></i><a href="#"> Marketing</a></li>
+            <li><i class="fa fa-fw fa-group"></i><a href="#"> HR</a></li>
+        </ul>
+    </div>
+</div>

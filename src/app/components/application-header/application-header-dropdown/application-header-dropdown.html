@@ -1,0 +1,13 @@
+<div class="application-header-dropdown">
+    <div class="application-header-dropdown__title" (click)="toggle()">
+        <i class="fa fa-fw fa-link"></i> {{title}}
+    </div>
+    <div class="application-header-dropdown__content" [hidden]="!visible">
+        <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+            <li>Link 4</li>
+        </ul>
+    </div>
+</div>
